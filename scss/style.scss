@@ -942,3 +942,24 @@ li {
 }
 
 // RESPONSIVE DESIGN SECTION
+
+@media screen  and (max-width: 1140px) {
+  .header__container{
+    img{
+      width: 10px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 576px) {
+  
+}
