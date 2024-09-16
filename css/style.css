@@ -59,7 +59,7 @@ li::marker {
     margin-bottom: 108px
 }
 
-.header__container ul {
+.header-center ul {
     display: flex;
     align-items: center;
     gap: 40px
@@ -89,6 +89,11 @@ li::marker {
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.header-logo img {
+    width: 112px;
+    height: 40px;
 }
 
 .hero__container {
@@ -1318,7 +1323,7 @@ li::marker {
     }
 
     /* LAST SECTION */
-    .last__container{
+    .last__container {
         background: #FF7235;
         width: 1000px;
         margin-left: 150px;
@@ -1344,7 +1349,7 @@ li::marker {
         margin-bottom: -20px;
     }
 
-    .last-bottom{
+    .last-bottom {
         max-width: 992px;
         background-image: url(../images/last-bac-img.png);
         background-repeat: no-repeat;
@@ -1356,7 +1361,7 @@ li::marker {
 
     /* FOOTER SECTION */
 
-    .footer{
+    .footer {
         margin-left: 350px;
     }
 
@@ -1367,5 +1372,93 @@ li::marker {
     .container {
         padding-left: 100px;
     }
-    
+
+    /* HEADER SECTION */
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__container button {
+        width: 140px;
+        height: 35px;
+        border-radius: 4px;
+        border: 1px solid #ff7235;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+
+    .header-center ul {
+        gap: 20px;
+    }
+
+    .header-center a {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 10px;
+
+
+    }
+
+    .header-logo img {
+        width: 80px;
+        height: 30px;
+    }
+
+    /* HERO SECTION */
+    .hero-left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+        width: 500px;
+        height: 288px;
+        text-align: center;
+        margin-bottom: -150px;
+    }
+
+    .hero__container button{
+        width: 140px;
+        height: 45px;
+        border-radius: 2px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .hero__container button img{
+        width: 18px;
+        height: 18px;
+    }
+
+    .hero-right img {
+        width: 400px;
+        height: 320px;
+    }
+
+    .hero__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    /* MAIN SECTION */
+    .main__container{
+        width: 750px;
+    }
+
+    .main__container img{
+        width: 700px;
+        
+    }
+
 }

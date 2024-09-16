@@ -1,4 +1,4 @@
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1204,7 +1204,7 @@ li {
       padding-left: 100px;
   }
 
-  /* HEADER SECTION */
+  //HEADER SECTION
   .header__container {
       display: flex;
       align-items: center;
@@ -1214,7 +1214,7 @@ li {
 
   }
 
-  /* HERO SECTION */
+  // HERO SECTION 
   .hero__container {
       display: flex;
       align-items: center;
@@ -1262,7 +1262,7 @@ li {
       line-height: 20px;
   }
 
-  /* MAIN SECTION */
+  //MAIN SECTION 
 
   .main__container {
       width: 1000px;
@@ -1278,7 +1278,7 @@ li {
       margin-left: -50px;
   }
 
-  /* ARTICLE SECTION */
+  //ARTICLE SECTION 
   .article__container img {
       width: 110px;
       height: 30px;
@@ -1289,7 +1289,7 @@ li {
       margin-left: 10px;
   }
 
-  /* INFO SECTION */
+  //INFO SECTION 
   .info__container {
       margin-left: 100px;
 
@@ -1309,7 +1309,7 @@ li {
       margin-bottom: -40px;
   }
 
-  /* SAVE SECTION */
+  //SAVE SECTION 
   .save__container {
       margin-left: 100px;
       background-color: #fffaf8;
@@ -1330,7 +1330,7 @@ li {
       margin-bottom: -40px;
   }
 
-  /* NEED SECTION */
+  //NEED SECTION 
   .need__container {
       margin-left: 100px;
   }
@@ -1349,7 +1349,7 @@ li {
       margin-bottom: -40px;
   }
 
-  /* WORK SECTION */
+  //WORK SECTION 
 
   .work-top h2 {
       width: 440px;
@@ -1381,7 +1381,7 @@ li {
       margin-top: -100px;
   }
 
-  /* PLAN SECTION */
+  //PLAN SECTION 
   .plan__container {
       background-color: #fffaf8;
       margin-left: 200px;
@@ -1395,7 +1395,7 @@ li {
       border-radius: 8px;
   }
 
-  /* LAST SECTION */
+  //LAST SECTION 
   .last__container{
       background: #FF7235;
       width: 1000px;
@@ -1432,7 +1432,7 @@ li {
       background-position-x: -100px;
   }
 
-  /* FOOTER SECTION */
+  //FOOTER SECTION 
 
   .footer{
       margin-left: 350px;
