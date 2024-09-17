@@ -18,7 +18,7 @@ body {
 
 $text-color: #292830;
 $black: #000;
-$backgroun: #FF7235;
+$backgroun: #ff7235;
 $white: #fff;
 $link-color: #bdbdbd;
 $general-font: Hind Siliguri;
@@ -1038,6 +1038,15 @@ li {
 
   /* MAIN SECTION */
 
+  .main {
+    background-image: none;
+    background-color: $backgroun;
+    .main__container {
+      position: relative;
+      background-image: none;
+    }
+  }
+
   .main__container img {
     width: 1000px;
     height: 550px;
@@ -1264,7 +1273,7 @@ li {
   .hero__container {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: -300px;
     justify-content: center;
   }
 
@@ -1324,6 +1333,22 @@ li {
   }
 
   /* ARTICLE SECTION */
+  .article__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    position: relative;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .samsung {
+      grid-column: span 2;
+    }
+  }
+
   .article__container img {
     width: 110px;
     height: 30px;
@@ -1501,7 +1526,7 @@ li {
     gap: 20px;
   }
 
-  .header-center a {
+  .header__container .header-center a {
     font-size: 12px;
     font-weight: 300;
     line-height: 10px;
@@ -1557,11 +1582,12 @@ li {
   /* MAIN SECTION */
   .main {
     background-image: none;
-    background-color: #fff;
+    background-color: $backgroun;
 
     .main__container {
       background-image: none;
       position: relative;
+      background-color: $backgroun;
     }
   }
 
@@ -1622,6 +1648,7 @@ li {
   .info-right img {
     width: 320px;
     height: 260px;
+    margin-bottom: 30px;
   }
 
   /* SAVE SECTION */
@@ -1915,4 +1942,228 @@ li {
   }
 
   // HAEDER SECTION
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hero-left-bot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -30px;
+  }
+
+  .header__container > .header-logo:nth-child(1),
+  .header__container > .header-btn:nth-child(2) {
+    display: inline-block;
+  }
+
+  // HERO SECTION
+  .hero__container {
+    .hero-left h1 {
+      font-size: 30px;
+      width: 400px;
+      height: 230px;
+      text-align: center;
+      margin-bottom: -100px;
+    }
+
+    .hero-left button {
+      width: 120px;
+      height: 40px;
+      border-radius: 1px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .hero-right img {
+      width: 220px;
+      height: 180px;
+    }
+  }
+  // MAIN SECTION
+  .main {
+    display: none;
+  }
+  // INFO SECTION
+
+  .info-left {
+    h6 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 30px;
+      width: 300px;
+      height: 230px;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+    p {
+      width: 310px;
+      height: 70px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+      text-align: center;
+      margin-bottom: -20px;
+    }
+  }
+
+  .info-right {
+    img {
+      width: 220px;
+      height: 180px;
+    }
+  }
+  // SAVE SECTION
+  .save-right {
+    h6 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 30px;
+      width: 300px;
+      height: 230px;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+    p {
+      width: 310px;
+      height: 70px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+      text-align: center;
+      margin-bottom: -20px;
+    }
+  }
+
+  .save-left {
+    img {
+      width: 220px;
+      height: 180px;
+    }
+  }
+  // NEED SECTION
+  .need-left {
+    h6 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 30px;
+      width: 300px;
+      height: 230px;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+    p {
+      width: 310px;
+      height: 70px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+      text-align: center;
+      margin-bottom: -20px;
+    }
+  }
+
+  .need-right {
+    img {
+      width: 220px;
+      height: 180px;
+    }
+  }
+  // WORK SECTION
+
+  .work__container .work-top {
+    h2 {
+      font-size: 30px;
+      width: 300px;
+      height: 230px;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+
+    p {
+      width: 310px;
+      height: 70px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+      text-align: center;
+      margin-bottom: -2px;
+    }
+  }
+  // PLAN SECTION
+
+  .plan__container .plan-top {
+    h2 {
+      font-size: 30px;
+      width: 335px;
+      height: 60px;
+      text-align: center;
+      margin-bottom: -150px;
+    }
+  }
+
+  // LAST SECTION
+  .last__container {
+    background-color: #fff;
+    margin-top: -330px;
+    padding-right: 150px;
+
+    .last-top {
+      h2 {
+        font-size: 30px;
+        width: 380px;
+        height: 230px;
+        text-align: center;
+        margin-bottom: -170px;
+        color: $backgroun;
+      }
+    }
+  }
+
+  .last__container .last-top h3 {
+    width: 310px;
+    height: 70px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: -50px;
+    color: $backgroun;
+  }
+
+// FOOTER SECTION
+
+
+
 }
+
+
