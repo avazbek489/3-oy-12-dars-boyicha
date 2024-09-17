@@ -41,6 +41,10 @@ img {
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+  border: none;
+}
 button {
   border: none;
   transition: $transition;
@@ -59,6 +63,7 @@ a {
   &:hover {
     text-decoration: underline solid $black;
     color: $black;
+    list-style: disc;
   }
 }
 
@@ -72,7 +77,7 @@ li {
   }
 
   &::marker {
-    color: $black;
+    color: red;
   }
 }
 
@@ -186,15 +191,26 @@ li {
 }
 
 // MAIN SECTION
-.main__container {
-  background-image: url("../images/Blob.png");
-  background-repeat: no-repeat;
-  width: 1440px;
-  height: 712px;
+
+.main {
   background-color: $backgroun;
-  padding-top: 87px;
-  padding-left: 165px;
-  padding-right: 165px;
+
+  .main__container {
+    background-image: url("../images/Blob.png");
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 712px;
+
+    padding-top: 115px;
+    padding-left: 50px;
+    padding-right: 165px;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 // ARTICLE SECTION
@@ -521,6 +537,9 @@ li {
     color: $link-color;
     margin-bottom: $medium-size;
   }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 // PLAN SECTION
@@ -601,6 +620,7 @@ li {
 }
 
 .paid {
+  transition: all 1s ease;
   h4 {
     font-family: $general-font;
     font-size: $medium-size;
@@ -644,15 +664,21 @@ li {
     background: $backgroun;
     color: $white;
   }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 // LAST SECTION
+.last {
+  background-color: $backgroun;
+}
 .last__container {
   background-image: url("../images/Blob.png");
   background-repeat: no-repeat;
-  width: 1440px;
+  width: 1100px;
   height: 712px;
-  background-color: $backgroun;
 
   display: flex;
   align-items: center;
@@ -680,8 +706,9 @@ li {
     background-image: url("../images/last-bac-img.png");
     background-repeat: no-repeat;
     margin-top: -80px;
-    width: 1295px;
+    width: 1050px;
     height: 340.23px;
+    padding: 10px;
   }
 }
 
@@ -746,7 +773,7 @@ li {
   }
 }
 
-.footer-top{
+.footer-top {
   display: flex;
   gap: 150px;
 }
@@ -919,7 +946,7 @@ li {
   }
 }
 
-.footer-input input:focus{
+.footer-input input:focus {
   outline: none;
   border: none;
 }
