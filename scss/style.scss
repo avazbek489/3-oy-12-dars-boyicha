@@ -41,6 +41,30 @@ img {
   cursor: pointer;
 }
 
+#theme-toggle {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 500px;
+
+  &:hover {
+    background-color: #bdbdbd;
+    color: #000;
+  }
+}
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
 input:focus {
   outline: none;
   border: none;
