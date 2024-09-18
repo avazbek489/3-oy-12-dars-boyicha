@@ -42,14 +42,18 @@ img {
 }
 
 // TYPER
-#typewriter {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 24px;
-  white-space: nowrap;
+.text-container {
   overflow: hidden;
-  border-right: 2px solid #000;
-  width: 0;
-  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+}
+
+.text {
+  display: inline-block;
+  font-size: 2rem;
+  color: #000;
+  font-family: "Courier New", Courier, monospace;
+  animation: typing 4s steps(40, end) 0s 1 normal both,
+    blink 0.75s step-end infinite, erasing 4s steps(40, end) 4s 1 normal both;
 }
 
 @keyframes typing {
@@ -61,13 +65,22 @@ img {
   }
 }
 
-@keyframes blink-caret {
+@keyframes blink {
   from,
   to {
     border-color: transparent;
   }
   50% {
     border-color: black;
+  }
+}
+
+@keyframes erasing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
   }
 }
 

@@ -14,7 +14,10 @@
     <div class="container dark-mode__container">
         <button class="dark" id="theme-toggle">DARK MODE</button>
 
-        <div id="typewriter"></div>
+        <div class="text-container">
+            <div id="animatedText" class="text">Welcome to my site!</div>
+        </div>
+
 
     </div>
     <!-- HEADER SECTION -->
@@ -341,37 +344,53 @@
         document.head.appendChild(style);
 
 
-        
-        const typewriter = document.getElementById('typewriter');
-        const texts = [
-            "Welcome to my site!",
-            
-        ];
-        let textIndex = 0;
-        let charIndex = 0;
 
-        function type() {
-            if (charIndex < texts[textIndex].length) {
-                typewriter.textContent += texts[textIndex].charAt(charIndex);
+        // TYPER ANIMATSIYASI
+
+
+        const textElement = document.getElementById('animatedText');
+        const text = textElement.textContent;
+        textElement.textContent = '';
+
+        const duration = 1.5;
+        const interval = 4000;
+
+        let charIndex = 0;
+        let animating = false;
+
+        function animateText() {
+            if (charIndex < text.length) {
+                textElement.textContent += text.charAt(charIndex);
                 charIndex++;
-                setTimeout(type, 100);
+                setTimeout(animateText, 100);
             } else {
                 setTimeout(() => {
-                    typewriter.textContent = "Hello, welcome to my website!";
-                    charIndex = 0;
-                    textIndex = (textIndex + 1) % texts.length;
-                    setTimeout(type, 500);
+                    eraseText();
                 }, 2000);
             }
         }
 
-        type();
+        function eraseText() {
+            if (charIndex > 0) {
+                textElement.textContent = text.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseText, 50);
+            } else {
+                setTimeout(() => {
+                    animateText();
+                }, interval - 2000);
+            }
+        }
+
+        animateText();
+
         setInterval(() => {
-            typewriter.textContent = "";
-            textIndex = (textIndex + 1) % texts.length;
+            textElement.textContent = '';
             charIndex = 0;
-            type();
-        }, 15000);
+            animateText();
+        }, interval);
+
+
 
     </script>
 
