@@ -31,7 +31,14 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: conic-gradient(from 0deg, #ff3f3f, #ffaf3f, #3fff6f, #3f6fff, #ff3f3f);
+  background: conic-gradient(
+    from 0deg,
+    #ff3f3f,
+    #ffaf3f,
+    #3fff6f,
+    #3f6fff,
+    #ff3f3f
+  );
   background-size: 200% 200%;
   animation: spin 2s linear infinite, gradient 4s ease infinite;
 }
@@ -58,7 +65,11 @@ body {
   display: none;
 }
 // LOADER SECTION END
-
+.dark-mode__container {
+  position: fixed;
+  background-color: #fff;
+  height: 50px;
+}
 
 // OZGARUVCHILARNI TAYINLASH QISMI
 
@@ -84,7 +95,12 @@ $samsung: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1500%)
   hue-rotate(180deg) brightness(100%) contrast(100%);
 
 // MIXINS SECTION
+@mixin df-aic() {
+  @include df-aic();
+}
 
+@mixin
+// MIXIN END
 
 // ANIMATSIYA SECTION
 img {
@@ -150,8 +166,7 @@ input[type="text"]:focus {
   font-size: 16px;
   transition: background-color 0.3s;
   position: fixed;
-  display: flex;
-  align-items: center;
+  @include df-aic();
   justify-content: center;
   margin-left: 500px;
 
@@ -207,8 +222,7 @@ li {
 // HEADER SECTION
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   justify-content: space-between;
 
   padding-top: 38px;
@@ -250,8 +264,7 @@ li {
 // HERO SECTION
 
 .hero__container {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   gap: 30px;
   justify-content: center;
   padding-bottom: 158px;
@@ -280,8 +293,7 @@ li {
 }
 
 .hero-left-bot {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   gap: $medium-size;
 
   button {
@@ -339,8 +351,7 @@ li {
 // ARTICLE SECTION
 
 .article__container {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   gap: 108px;
   justify-content: center;
   padding-top: 82px;
@@ -379,8 +390,7 @@ li {
 .info__container {
   padding: 141px 0;
 
-  display: flex;
-  align-items: center;
+  @include df-aic();
   justify-content: center;
   gap: 31px;
 
@@ -444,8 +454,7 @@ li {
 .save__container {
   padding: 141px 0;
 
-  display: flex;
-  align-items: center;
+  @include df-aic();
   justify-content: center;
   gap: 31px;
 
@@ -505,8 +514,7 @@ li {
 .need__container {
   padding: 141px 0;
 
-  display: flex;
-  align-items: center;
+  @include df-aic();
   justify-content: center;
   gap: 31px;
 
@@ -681,8 +689,7 @@ li {
 }
 
 .plan__container {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   flex-direction: column;
   padding: $medium-size;
   gap: 80px;
@@ -812,8 +819,7 @@ li {
   width: 1100px;
   height: 712px;
 
-  display: flex;
-  align-items: center;
+  @include df-aic();
   flex-direction: column;
 
   .last-top {
@@ -912,8 +918,7 @@ li {
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   gap: 12px;
   margin-bottom: 300px;
 
@@ -1111,8 +1116,7 @@ li {
 }
 
 .footer-bottom-right {
-  display: flex;
-  align-items: center;
+  @include df-aic();
   gap: 12px;
 }
 
