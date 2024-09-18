@@ -79,6 +79,8 @@ setInterval(() => {
     animateText();
 }, interval);
 
+alert("Hello welcome to my web-site!",) 
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -87,5 +89,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         loader.style.display = 'none';
         content.style.display = 'block';
-    }, 4000);
+    }, 35~00);
 });

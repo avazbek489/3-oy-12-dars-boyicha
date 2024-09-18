@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+// LOADER SECTION
 .loader {
   position: fixed;
   top: 0;
@@ -57,6 +57,7 @@ body {
 .content {
   display: none;
 }
+// LOADER SECTION END
 
 
 // OZGARUVCHILARNI TAYINLASH QISMI
@@ -81,6 +82,10 @@ $linkedin: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(757%)
   hue-rotate(-147deg) brightness(104%) contrast(93%);
 $samsung: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1500%)
   hue-rotate(180deg) brightness(100%) contrast(100%);
+
+// MIXINS SECTION
+
+
 // ANIMATSIYA SECTION
 img {
   cursor: pointer;
