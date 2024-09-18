@@ -14,6 +14,51 @@ body {
   padding: 0 20px;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.gradient-spinner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #ff3f3f, #ffaf3f, #3fff6f, #3f6fff, #ff3f3f);
+  background-size: 200% 200%;
+  animation: spin 2s linear infinite, gradient 4s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.content {
+  display: none;
+}
+
+
 // OZGARUVCHILARNI TAYINLASH QISMI
 
 $text-color: #292830;
@@ -39,6 +84,10 @@ $samsung: brightness(0) saturate(100%) invert(32%) sepia(85%) saturate(1500%)
 // ANIMATSIYA SECTION
 img {
   cursor: pointer;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5px #0f6ef7;
 }
 
 // TYPER
