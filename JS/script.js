@@ -89,5 +89,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         loader.style.display = 'none';
         content.style.display = 'block';
-    }, 35~00);
+    }, 3500);
 });
